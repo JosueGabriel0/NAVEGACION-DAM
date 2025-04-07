@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import pe.edu.upeu.navigationjpc.ui.presentation.screens.BarcodeScanningScreen
 import pe.edu.upeu.navigationjpc.ui.presentation.screens.CalcUPeU
+import pe.edu.upeu.navigationjpc.ui.presentation.screens.ComponenteScreen
 import pe.edu.upeu.navigationjpc.ui.presentation.screens.HomeScreen
 import pe.edu.upeu.navigationjpc.ui.presentation.screens.ProfileScreen
 import pe.edu.upeu.navigationjpc.ui.presentation.screens.SettingsScreen
@@ -18,5 +19,6 @@ fun NavigationHost(navController: NavHostController) {
         composable("settings") { SettingsScreen() }
         composable("calc") { CalcUPeU() }
         composable("barcode") { BarcodeScanningScreen(navController) }
+        composable("componente") { ComponenteScreen() }
     }
 }
